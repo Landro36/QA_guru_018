@@ -43,8 +43,7 @@ public class TestDemoQa {
         //Найти чекбокс Хобби-3 и выбрать его клавишей пробел
         $("#hobbies-checkbox-3").sendKeys(" ");
         //Найти элемент Обзор в картинках и выбрать файл для добавления
-        File fileToUpload = new File("src/test/resources/image_1.png");
-        $("#uploadPicture").uploadFile(fileToUpload);
+        $("#uploadPicture").uploadFromClasspath("image_1.png");
         //Найти поле ввода Адрес и ввести Тестовый адрес
         $("[id=currentAddress]").setValue("Testing Address");
         //Найти выпадающее меню Штат и кликнуть по нему
