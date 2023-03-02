@@ -1,6 +1,8 @@
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -40,6 +42,9 @@ public class demoQaTest {
         $("#hobbies-checkbox-2").sendKeys(" ");
         //Найти чекбокс Хобби-3 и выбрать его клавишей пробел
         $("#hobbies-checkbox-3").sendKeys(" ");
+        //Найти элемент Обзор в картинках и выбрать файл для добавления
+        File fileToUpload = new File("src/test/pictures/image_1.png");
+        $("#uploadPicture").uploadFile(fileToUpload);
         //Найти поле ввода Адрес и ввести Тестовый адрес
         $("[id=currentAddress]").setValue("Testing Address");
         //Найти выпадающее меню Штат и кликнуть по нему
