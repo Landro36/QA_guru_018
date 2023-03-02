@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class demoQaTest {
+public class TestDemoQa {
     @Test
     void fullFormTest(){
         // Открыть сайт https://demoqa.com/automation-practice-form
@@ -43,7 +43,7 @@ public class demoQaTest {
         //Найти чекбокс Хобби-3 и выбрать его клавишей пробел
         $("#hobbies-checkbox-3").sendKeys(" ");
         //Найти элемент Обзор в картинках и выбрать файл для добавления
-        File fileToUpload = new File("src/test/pictures/image_1.png");
+        File fileToUpload = new File("src/test/resources/image_1.png");
         $("#uploadPicture").uploadFile(fileToUpload);
         //Найти поле ввода Адрес и ввести Тестовый адрес
         $("[id=currentAddress]").setValue("Testing Address");
