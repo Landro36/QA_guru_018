@@ -6,9 +6,9 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class DZ_3 {
+public class demoQaTest {
     @Test
-    void firstTest(){
+    void fullFormTest(){
         // Открыть сайт https://demoqa.com/automation-practice-form
         open("https://demoqa.com/automation-practice-form");
         Selenide.executeJavaScript("$('#fixedban').remove()");
