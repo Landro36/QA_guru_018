@@ -67,6 +67,7 @@ public class demoQaTest {
         $(".modal-body").shouldHave(text("6 January,1987"));
         $(".modal-body").shouldHave(text("Commerce"));
         $(".modal-body").shouldHave(text("Sports, Reading, Music"));
+        $(".modal-body").shouldHave(text("image_1.png"));
         $(".modal-body").shouldHave(text("Testing Address"));
         $(".modal-body").shouldHave(text("Uttar Pradesh Agra"));
         $("#closeLargeModal").click();
